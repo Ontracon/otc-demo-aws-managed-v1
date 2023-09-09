@@ -1,0 +1,14 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# OTC - Terraform managed File, please don't change as it will overwritten!
+# Template: a1_otc_base/CODEOWNERS.tpl
+# ---------------------------------------------------------------------------------------------------------------------
+# Global Codeowners:
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, will be requested for review when someone opens a pull request.
+
+*       @jkritzen 
+# ---------------------------------------------------------------------------------------------------------------------
+# OTC Admins
+# ---------------------------------------------------------------------------------------------------------------------
+./otc/**    @Ontracon/otc-admins
+.github/**  @Ontracon/otc-admins
