@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# OTC - Terraform managed File, please don't change as it will overwritten!
+# ---------------------------------------------------------------------------------------------------------------------
+name: 'Deploy (prd)'
+
+on:
+  release:
+    types: [published]
+
+
+permissions:
+  # required for all workflows
+  # kics-scan ignore-line
+  id-token: write # This is required for requesting the JWT
+  security-events: write
+  actions: read
+  contents: write
+  checks: write
+  pull-requests: write
+
+jobs:
+  TF:
+      name: Terraform (prd)
+      uses: Ontracon/gh-workflows/.github/workflows/otc-tf-deploy.yml@main
+      secrets: inherit
+      with:
+        environment: prd
