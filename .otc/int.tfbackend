@@ -1,0 +1,5 @@
+region         = "eu-central-1"
+bucket         = "otc-otc-prd-eu-central-1-tfstate"
+dynamodb_table = "otc-otc-prd-eu-central-1.locks"
+key            = "int-otc-demo-aws-managed-v1.tfstate"
+encrypt        = true
