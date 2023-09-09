@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# OTC - Terraform managed File, please don't change as it will overwritten!
+# Template: a1_otc_base/tests.yml.tpl
+# ---------------------------------------------------------------------------------------------------------------------
+name: 'Terraform Tests'
+
+on:
+  pull_request:
+
+permissions:
+  # required for all workflows
+  # kics-scan ignore-line
+  id-token: write # This is required for requesting the JWT
+  security-events: write
+  actions: read
+  contents: write
+  checks: write
+  pull-requests: write
+
+jobs:
+  TF_tests:
+   name: Terraform Tests
+   uses: Ontracon/gh-workflows/.github/workflows/tf_test.yml@main
+   secrets: inherit
