@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# OTC - Terraform managed File, please don't change as it will overwritten!
+# Template: a1_otc_base/docs.yml.tpl
+# ---------------------------------------------------------------------------------------------------------------------
+name: 'Terraform Docs'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+     - 'main'
+    paths-ignore:
+     - 'README.md'
+
+permissions:
+  # required for all workflows
+  contents: write
+
+
+jobs:
+  TF_Docs:
+   name: Terraform Docs
+   uses: Ontracon/gh-workflows/.github/workflows/tf_docs.yml@main
+   secrets: inherit
