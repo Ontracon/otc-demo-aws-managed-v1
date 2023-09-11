@@ -1,5 +1,5 @@
 {
- "otc" : {"otc_backend":"aws","otc_env":"prd","otc_region":"eu-central-1","otc_source":"git::https://github.com/otc-plattform/otc-gh-project.git","otc_version":"v1.0.2"},
+ "otc" : {"otc_backend":"aws","otc_env":"prd","otc_region":"eu-central-1","otc_source":"git::https://github.com/otc-plattform/otc-gh-project.git","otc_version":"v1.0.3"},
 
  "customer" : {"customer_name":"ontracon GmbH","customer_optional_settings":{"aws_iam_openid_connect_provider_arn":"arn:aws:iam::710036656280:oidc-provider/token.actions.githubusercontent.com"},"customer_prefix":"otc","github":{"gh_base_url":"https://api.github.com/","gh_oidc_url":"token.actions.githubusercontent.com","gh_org":"Ontracon","gh_runner":"otc-static"}},
 
